@@ -1,0 +1,39 @@
+body{
+    padding-top: 80px;
+}
+textarea {
+    min-height:150px;
+}
+.vresize {
+    resize: vertical; 
+  }
+hr{
+    border:1px solid black;
+}
+/* comment */
+
+.thumbnail2 {
+    padding:0px;
+}
+.panel2>.panel-heading2:after,.panel2>.panel-heading2:before{
+	position:absolute;
+	top:11px;left:-16px;
+	right:100%;
+	width:0;
+	height:0;
+	display:block;
+	content:" ";
+	border-color:transparent;
+	border-style:solid solid outset;
+	pointer-events:none;
+}
+.panel2>.panel-heading2:after{
+	border-width:7px;
+	border-right-color:#f7f7f7;
+	margin-top:1px;
+	margin-left:2px;
+}
+.panel2>.panel-heading2:before{
+	border-right-color:#ddd;
+	border-width:8px;
+}

@@ -1,0 +1,43 @@
+<!-- SearchBar -->
+<div class="content">
+  <div class="container search-containter">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="row">
+        <div class="text-center">
+          <h1>This is Logo</h1>
+          <p>Slogan</p>
+        </div>
+        <form role="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input id="1" class="form-control" type="text" name="search" placeholder="Search..." required/>
+              <span class="input-group-btn">
+                <button class="btn btn-success" type="submit">
+                  <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                </button>
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SearchBar End -->
+<!-- Featured recipe -->
+<div class="container stuff-container" >
+  <div class="row">
+    <div class="col-md-3 col-sm-6"  *ngFor="let data of recipeList,let i=index">
+      <div class="thumbnail">
+        <img src="{{data.image}}" class="img-responsive">
+        <h4 style="text-align: center">{{data.name}}</h4>
+        <div class="row">
+          <div style="display: flex; justify-content: center;">
+            <button routerLink="/recipe" class="btn btn-success"> VIEW RECIPE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Featured recipe end -->

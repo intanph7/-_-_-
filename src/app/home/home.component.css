@@ -1,0 +1,28 @@
+/* SearchBar */
+.content{
+    background:url(homecover2.jpg) center no-repeat scroll;
+    background-size: cover;
+    padding: 80px 0;
+    height: 500px;
+}
+.search-containter{
+    color:#fff;
+    width:100%;
+    margin:auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+/* Featured Recipe */
+.stuff-container{
+    padding:50px;
+}
+.thumbnail{
+    opacity:0.80;
+    -webkit-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+.thumbnail:hover{
+    opacity:1.00;
+    box-shadow: 0px 0px 10px #000;
+}

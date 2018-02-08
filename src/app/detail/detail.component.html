@@ -1,0 +1,110 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="panel panel-default" style="padding:25px;">
+          <div class="panel-body">
+            <h1 style="text-align: center;">
+              Recipe Name
+            </h1>
+            <p class="lead" style="text-align: center;">
+              <i class="fa fa-user"></i> by Author
+            </p>
+            <hr>
+            <img src="https://firebasestorage.googleapis.com/v0/b/proej-e5ff7.appspot.com/o/Our-Favorite-Thanksgiving-Stuffing-with-Sausage-and-Cornbread-07092017.jpg?alt=media&token=66b880e3-2ff6-4a92-a313-5e3a21c766bb"
+              class="img-responsive" style="padding:20px;">
+            <hr>
+            <p>Yield :</p>
+            <p>Time :</p>
+            <hr>
+            <h4>INGREDIENTS</h4>
+            <ul>
+              <li>Ingredient</li>
+              <li>Ingredient</li>
+              <li>Ingredient</li>
+              <li>Ingredient</li>
+              <li>Ingredient</li>
+              <li>Ingredient</li>
+              <li>Ingredient</li>
+              <li>Ingredient</li>
+              <li>Ingredient</li>
+            </ul>
+            <hr>
+            <h4>PREPARATION</h4>
+            <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</p>
+            <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</p>
+            <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</p>
+            <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem
+              ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</p>
+          </div>
+        </div>
+        <div class="well">
+          <h4>
+            <b>Leave a Review:</b>
+          </h4>
+          <form #f="ngForm" (ngSubmit)="add(f)" novalidate>
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" placeholder="Name" value="" ngModel name="name">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control vresize" rows="3" placeholder="Write a Review.." value="" ngModel name="comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="row" *ngFor="let review of list">
+          <div class="col-xs-2"> 
+            <div class="thumbnail thumbnail2">
+              <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+            </div>
+            <!-- /thumbnail -->
+          </div>
+          <!-- /col-sm-1 -->
+
+          <div class="col-xs-10">
+            <div class="panel panel2 panel-default">
+              <div class="panel-heading panel-heading2">
+                <strong>{{review.value.name}}</strong>
+              </div>
+              <div class="panel-body">
+                {{review.value.comment}}
+              </div>
+              <!-- /panel-body -->
+            </div>
+            <!-- /panel panel-default -->
+          </div>
+          <!-- /col-sm-5 -->
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Favorites</div>
+
+          <!-- Table -->
+          <table class="table">
+            <tr>
+
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

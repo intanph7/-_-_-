@@ -1,0 +1,37 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <h5 style="text-align: center;">Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</h5>
+          <br>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <form #f="ngForm" (ngSubmit)="add(f)" novalidate>
+              <!-- Name input-->
+              <div class="form-group">
+                <label>Name</label>
+                <input ngModel name="name" type="text" placeholder="Your name" class="form-control">
+              </div>
+
+              <!-- Email input-->
+              <div class="form-group">
+                <label>Your E-mail</label>
+                <input ngModel name="email" type="email" placeholder="Your email" class="form-control">
+              </div>
+
+              <!-- Message body -->
+              <div class="form-group">
+                <label>Your message</label>
+                <textarea class="form-control vresize" ngModel name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+              <div style="display: flex; justify-content: center;">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
